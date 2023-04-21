@@ -14,6 +14,7 @@
 }
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 header {
   width: 100vw;
@@ -22,9 +23,9 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #1c2331;
+  background-color: #10141c;
   animation-name: appear;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 .logo,
 li,
@@ -35,6 +36,7 @@ button {
   padding: 10px 10%;
   text-decoration: none;
 }
+
 .nav-list {
   display: flex;
   justify-content: center;
@@ -99,7 +101,7 @@ button:hover {
     transform: translateY(100vh) scale(0);
   }
   100% {
-    transform: translateY(-10vh) scale(1);
+    transform: translateY(-50vh) scale(1);
   }
 }
 .container h1 {
@@ -107,5 +109,68 @@ button:hover {
   font-size: 3rem;
   position: absolute;
   animation-name: appear;
-  animation-duration: 2s;
+  animation-duration: 3s;
+}
+.line {
+  width: 80%;
+  height: 1px;
+  border: 1px solid #ffd3e0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.abut-me-projects {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.article-me {
+  color: #ffd3e0;
+  width: 30%;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid #ffd3e0;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 1.2rem;
+
+  transform: translateX(400%);
+  transition: transform 1.5s ease;
+}
+.show{
+  transform: translateX(0);
+}
+.article-me h2 {
+  margin-bottom: 5px;
+}
+.full-stack.article-me{
+  width: 62%;
+  height: 310px;
+}
+.find-me-on{
+  background-color: #10141c;
+}
+.find-me-on h2{
+  color: #ffd3e0;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  
+}
+.social-media{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.social-media .github{
+  width: 100px;
+  height: 100px;
+}
+.fa-brands{
+  color: #ffd3e0;
+  font-size: 3rem;
 }
