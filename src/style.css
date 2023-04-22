@@ -150,8 +150,11 @@ button:hover {
   width: 62%;
   height: 310px;
 }
+
 .find-me-on{
-  background-color: #10141c;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .find-me-on h2{
   color: #ffd3e0;
@@ -164,13 +167,19 @@ button:hover {
 .social-media{
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   margin: 10px;
-}
-.social-media .github{
-  width: 100px;
-  height: 100px;
+  height: 300px;
+
+
 }
 .fa-brands{
   color: #ffd3e0;
   font-size: 3rem;
+  transition: all 0.5s ease 0s;
+}
+
+.fa-brands:hover{
+  font-size: 4rem;
+  color: #cd7690;
 }
