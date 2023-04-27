@@ -1,4 +1,14 @@
 const boxes = document.querySelectorAll(".article-me");
+const media = document.getElementById("socials-animate");
+
+let checkMedia = () => {
+  const triggerBottomMedia = (window.innerHeight / 5) * 4;
+  const mediaTop = media.getBoundingClientRect().top;
+
+  if (mediaTop < triggerBottomMedia) {
+    media.style.setProperty("transform", "translate(0)");
+  }
+};
 
 let checkBoxes = () => {
   const triggerBottom = (window.innerHeight / 5) * 4;
@@ -15,3 +25,4 @@ let checkBoxes = () => {
 };
 
 window.addEventListener("scroll", checkBoxes);
+window.addEventListener("scroll", checkMedia);
